@@ -1,0 +1,97 @@
+{
+    "proyectos":[
+        {
+            "id": "1",
+            "titulo": "SkyAnalytics Dashboard",
+            "tag":"Web App",
+            "imagenes": [
+                "web_Dashboard.png",
+                "P1-2.jpg",
+                "P1-3.jpg",
+                "P1-4.jpg"
+            ],
+            "video": "",
+            "cliente": "Edificio de Asunción N°1",
+            "descripcion": "Plataforma de analisis de datos en tiempo real",
+            "fecha": "2025-10-10 02:15:12"
+        },
+        {
+            "id": "2",
+            "titulo": "Finance Tracker App",
+            "tag":"Mobile App",
+            "imagenes": [
+                "App_movil.png",
+                "P2-2.jpeg",
+                "P2-3.jpeg"
+            ],
+            "video": "",
+            "cliente": "Meta Sport",
+            "descripcion": "Aplicacion móvil para gestionar finanzas personales",
+            "fecha": "2025-10-10 02:19:53"
+        },
+        {
+            "id": "3",
+            "titulo": "CloudSync Platform",
+            "tag":"Software",
+            "imagenes": [
+                "Servicios_nube.png"
+                
+            ],
+            "video": "",
+            "cliente": "Vivienda particular en Samber",
+            "descripcion": "Solución de gestion de almacenamiento en la nube",
+            "fecha": "2025-10-10 02:22:46"
+        }
+    ],
+    "servicios":[
+        {
+            "id": "1",
+            "servicio": "CCTV",
+            "descripcion": "Instalación de circuito cerrado con monitoreo remoto",
+            "imagen": "camara2.webp"
+        },
+        {
+            "id": "2",
+            "servicio": "Control de acceso",
+            "descripcion": "Instalación de sistemas de control de acceso: lectores biométricos y apertura de acceso con reconocimiento, apertura sin contacto, apertura de barrera de vehículos automática",
+            "imagen": "P1-1.jpg"
+        },
+        {
+            "id": "3",
+            "servicio": "Sistemas PCI",
+            "descripcion": "Instalación de sistemas de Prevención contra incendios para oficinas, departamentos y hogar",
+            "imagen": "P3-1.jpeg"
+        },
+        {
+            "id": "4",
+            "servicio": "Arquitectura",
+            "descripcion": "Diseño, remodelación, supervisión y construcción de proyectos de arquitectura",
+            "imagen": "Arq-1.jpg"
+        },
+        {
+            "id": "5",
+            "servicio": "Extensión de fibra",
+            "descripcion": "Lanzamiento de fibra óptica para comunicación de red",
+            "imagen": "alarma_config.png"
+        },
+        {
+            "id": "6",
+            "servicio": "Alarmas de Intrusos",
+            "descripcion": "Instalación de sensores de apertura de accesos para oficinas y hogar, con central de control para activación de alarmas con supervisión remota",
+            "imagen": "alarma_config.png"
+        }
+    ],
+    "clientes":[
+        {
+            "id": "1",
+            "nombre":"Semar",
+            "logo": "logo-semar.webp"
+        },
+        {
+            "id": "2",
+            "nombre":"Meta Sport",
+            "logo": "meta_sport_logo.webp"
+        }
+    ]
+
+}
