@@ -1,0 +1,144 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+
+#productos{
+    
+    h2{
+        text-align: center;
+        background: linear-gradient(90deg, $fondoTercero, $linksHover);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        font-weight: 100;
+    }
+}
+
+.contenido-productos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include tablet{
+        @include grid(3,2rem);
+        
+    }
+    @include desktop{
+        @include grid(3,2rem);
+        
+    }
+
+    .etapas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $blanco;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        box-shadow: 0 0 40px -20px $hoverAlt;
+
+        .texto-proyecto{
+
+            h3{
+                font-size: 2.5rem;
+                color: $fondoTercero;
+            }
+
+            p{
+                font-size: 1.5rem;
+                color: $gris;
+            }
+        }
+    }
+
+    .img-etapa{
+        display: flex;
+        justify-content: center;
+        height: 20rem;
+        position: relative;
+        background: linear-gradient(180deg, $fondo-imagen-proyecto_up, $fondo-imagen-proyecto_down);
+        border-radius: 1rem;
+        
+
+        img{
+            width: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        h3{
+            position: absolute;
+            top: -4rem;
+            left: 3rem;
+            font-size: 10rem;
+            color: rgba(169, 139, 250, 0.199);
+        }    
+    }
+
+    .incentivo_CTA{
+        grid-column: 1 / 4;
+        background-color: $blanco;
+        padding: 2rem 2rem;
+        border-radius: 1rem;
+        box-shadow: 0  0 40px -20px $hoverAlt;
+
+        h2{
+            font-size: 2rem;
+        }
+
+        a{
+            background-color: $linksHover;
+            border-radius: .5rem;
+            padding: .5rem 2rem;
+            color: $blanco;
+
+            &:hover{
+                color: $linksHover;
+                background-color: $lilaClaro;
+            }
+        }
+    }
+    
+    
+}
+
+.divisor_decorador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 4;
+
+    .circulo_grante{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: $lilaClaro;
+        position: relative;
+        
+        .circulo_mediano{
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            background-color: $linksHover;
+            top: 20%;
+            left: 20%;
+            position: absolute;
+
+            .circulo_chico{
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: $blanco;
+                position: absolute;
+                top: 8.3%;
+                left: 8.3%;
+            }
+        }
+    }
+
+    .linea{
+        width: 25%;
+        height: .5rem;
+        background-color: $lilaClaro;
+    }
+}

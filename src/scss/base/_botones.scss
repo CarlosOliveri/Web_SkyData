@@ -1,0 +1,23 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use 'sass:color';
+
+.boton-largo{
+    @include boton($linksHover,$paddingRL:3rem,$size: 1.5rem);
+
+    @include tablet{
+        @include boton($linksHover,$paddingRL:3rem);
+    }
+}
+
+.boton-contacto{
+    @include boton($linksHover);
+}
+
+.boton-claro{
+    @include boton($lilaClaro,$linksHover,block);
+}
+
+.boton{
+    border: none;
+}

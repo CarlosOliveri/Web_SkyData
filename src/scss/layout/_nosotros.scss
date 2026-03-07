@@ -1,0 +1,100 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.contenido-nosotros{
+    background-color: #fef8fe;
+    display: grid;
+    justify-items: center;
+    padding: 0 2rem;
+    padding-bottom: 5rem;
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+
+        .container-relativo{
+            grid-column: 2 / 3;
+            width: 100%;
+            /* position: relative; */
+
+            img{
+                /* position: absolute; */
+                width: 100%;
+                /* left: -13rem;
+                top: -5rem; */
+            }
+        }
+
+        .texto-nosotros{
+            grid-row: 1 / 2;
+            
+        }
+    }
+
+    .texto-nosotros{
+        padding: 2rem 0 2rem 5rem;
+
+        h2{
+            margin: 0;
+            color: $fondoTercero;
+            margin-bottom: 5rem;
+        }
+
+        h3{
+            color: $fondoTercero;
+            font-weight: bold;
+            font-size: 4rem;
+
+            span{
+                color: $linksHover;
+            }
+        }
+
+        p{
+            color: $gris;
+            font-size: 2rem;
+
+            @include tablet{
+                font-size: 1.2rem;
+            }
+            @include desktop{
+                font-size: 1.8rem;
+            }
+
+        }
+    }
+
+    .mision-vision-container{
+        background-color: $fondo-imagen-proyecto_down;
+        border-radius: 1rem;
+        max-width: 50rem;
+        padding: 1rem 2rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 0 40px 0px $lilaClaro;
+
+        .imagen-apoyo-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        img{
+            width: 15rem;
+        }
+
+        h3{
+            text-align: center;
+            color: $hoverAlt;
+            font-weight: bold;
+
+            span{
+                color: $fondoTercero;
+            }
+        }
+
+        p{
+            text-align: center;
+            color: $gris;
+        }
+    }
+}

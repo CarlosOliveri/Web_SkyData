@@ -1,0 +1,146 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.header{
+    background: linear-gradient(to right, $fondoPrincipal, $fondoTercero);
+
+    .barra{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        padding-top: 2rem;
+
+        /* @include tablet{
+            flex-direction: row;
+        } */
+
+        
+
+        a{
+            position: relative;
+    
+            h1{
+                color: $linksHover;
+                font-size: 4rem;
+                font-weight: $bold;
+            }
+            
+            p{
+                font-size: 1rem;
+                font-weight: 700;
+                color: $lilaClaro;
+                margin: 0;
+                position: relative;
+                top: -2rem;
+            }
+        
+        }
+
+        span{
+            color: $lilaClaro;
+        }
+
+        .logo{
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .logo-enlace{
+            transform: translate(-70%,0%);
+            opacity: 0;
+            transition: transform 1s ease-out, opacity 1s ease-out;
+        }
+
+        .animacion-logo{
+            transform: translate(0%,0%);
+            opacity: 1;
+        }
+
+
+        .navegacion{
+            background-color: $lilaClaro;
+            display: none;
+            gap: 1rem;
+            position: absolute;
+            top: 9rem;
+            right: 0;
+            height: 100vh;
+            width: 20rem;
+            transform: translateY(-110%);
+            opacity: 0;
+            display: flex;
+            transition: transform 0.7s ease-out, opacity 0.5s ease-out;
+            z-index: 12;
+            
+            position: absolute;
+            top: 0;
+            padding-top: 2rem;
+
+            &.activo{
+                display: flex;
+            }
+
+
+
+            @include tablet{
+                background-color: unset;
+                display: flex;
+                position: unset;
+                gap: unset;
+                height: unset;
+                width: unset;
+                transform: translateY(0%);
+                opacity: 1;
+
+                position: unset;
+                top: unset;
+                padding-top: unset;
+            }
+        }
+
+        .navegacion-activo{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+
+        .menu-hamburguesa{
+            font-size: 3.5rem;
+
+            @include tablet{
+                /* visibility: hidden; */
+                display: none;
+            }
+        }
+
+
+    }
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    align-items: center;
+    /* visibility: hidden; */
+
+
+    a:not(:last-of-type){
+        color: $headerTextoPrincipal;
+        font-size: 1.5rem;
+        font-weight: $bold;
+
+        &:hover{
+            color: $linksHover;
+        }
+    }
+
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 45rem;
+    }
+
+    
+}
