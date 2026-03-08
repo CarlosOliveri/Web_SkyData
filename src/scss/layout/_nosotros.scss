@@ -33,7 +33,7 @@
     }
 
     .texto-nosotros{
-        padding: 2rem 0 2rem 5rem;
+        padding: 2rem 0 2rem 0rem;
 
         h2{
             margin: 0;
@@ -62,6 +62,10 @@
                 font-size: 1.8rem;
             }
 
+        }
+
+        @include tablet{
+            padding: 2rem 0 2rem 5rem;
         }
     }
 
