@@ -124,14 +124,15 @@
     align-items: center;
     /* visibility: hidden; */
 
-
-    a:not(:last-of-type){
-        color: $headerTextoPrincipal;
+    a{
         font-size: 1.5rem;
         font-weight: $bold;
+    }
 
-        &:hover{
+    @include telefono{
+        a:nth-last-of-type{
             color: $linksHover;
+            
         }
     }
 
@@ -140,6 +141,14 @@
         flex-direction: row;
         justify-content: space-between;
         min-width: 45rem;
+
+        a:not(:last-of-type){
+        color: $headerTextoPrincipal;
+
+        &:hover{
+            color: $linksHover;
+        }
+    }
     }
 
     
