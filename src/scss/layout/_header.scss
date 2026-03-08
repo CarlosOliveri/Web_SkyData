@@ -12,6 +12,7 @@
 .header{
     /* height: 40vh; */
     padding: 0 1rem 2rem 1rem;
+    position: relative;
 
     .banner-portada{
         /* background-color: $fondoPrincipal; */
@@ -79,6 +80,7 @@
                     font-size: 4rem;
                     font-weight: 100;
                     font-family: $fuente_principal;
+                    width: 100%;
 
                     span{
                         font-weight: bold;
