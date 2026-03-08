@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
         } catch(e){
             console.debug("Elementos de animación no encontrados en esta página.");
         }
-        document.querySelector('.logo-enlace').classList.add('animacion-logo');
+        //document.querySelector('.logo-enlace').classList.add('animacion-logo');
     }, 50);
 });
 
@@ -34,7 +34,7 @@ try{
     console.debug("Botón de subir no encontrado en esta página.");
 }
 
-window.addEventListener('scroll', () => {
+/* window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY; // Cuánto has bajado
     const windowHeight = window.innerHeight; // Altura visible de la ventana
     const docHeight = document.documentElement.scrollHeight; // Altura total del documento
@@ -45,4 +45,4 @@ window.addEventListener('scroll', () => {
     }else{
         document.querySelector('.contacto-fijo').classList.add('contacto-fijo-visible');
     }
-});
+}); */

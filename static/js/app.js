@@ -25,7 +25,7 @@ Proyecto.get_proyectos().then(data => {
         proyectoDiv.appendChild(imgProyecto);
 
         const proyectoImg = document.createElement("img");
-        proyectoImg.src = `assets/proyectos/${element["imagenes"][0]}`;
+        proyectoImg.src = `../../assets/proyectos/${element["imagenes"][0]}`;
         proyectoImg.alt = "Imagen del proyecto";
         imgProyecto.appendChild(proyectoImg);
 
