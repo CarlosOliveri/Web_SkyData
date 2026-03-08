@@ -101,7 +101,7 @@
                 font-family: $fuente_secundaria;
                 font-size: 3rem;
                 line-height: 3rem;
-                max-width: 30rem;
+                width: 30rem;
 
                 @include tablet{
                     margin-top: 3rem;
@@ -136,7 +136,7 @@
 
                 @include tablet{
                     font-size: 3rem;
-                    width: 30rem;
+                    width: 50rem;
                     line-height: 4rem;
                     margin-top: 1.5rem;
                 }
