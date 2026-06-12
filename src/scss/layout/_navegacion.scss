@@ -130,9 +130,11 @@
     }
 
     @include telefono{
-        a:nth-last-of-type{
-            color: $linksHover;
-            
+        a:not(:last-of-type){
+            color: $headerTextoPrincipal; 
+        }
+        a:last-of-type{
+            color: white; 
         }
     }
 
